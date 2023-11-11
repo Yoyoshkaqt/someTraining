@@ -1,14 +1,21 @@
 public class LessonTwo {
     public static void main(String[] args) {
-        checkRange(16,5);
-        System.out.println(checkRangeTwo(1,2));
+        checkRange(16, 5);
+        System.out.println(checkRangeTwo(1, 2));
         positiveOrNegative(-999999);
         System.out.println(positiveOrNegativeTwo(2));
 
         int nums[] = new int[100];
-                for(int i = 0;i<100;i++){
-                 nums[i] = i;
-                    System.out.println("nums[" + i + "] = " + nums[i]);
+        for (int i = 0; i < 100; i++) {
+            nums[i] = i;
+            System.out.println("nums[" + i + "] = " + nums[i]);
+
+            int some[] = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
+            for (int x : some) {
+                if (x < 6) {
+                    System.out.println(x * 2);
+                }
+            }
         }
     }
 
