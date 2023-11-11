@@ -4,6 +4,7 @@ public class LessonTwo {
         System.out.println(checkRangeTwo(1, 2));
         positiveOrNegative(-999999);
         System.out.println(positiveOrNegativeTwo(2));
+        printSomeThere("Print",3);
 
         int nums[] = new int[100];
         for (int i = 0; i < 100; i++) {
@@ -19,37 +20,44 @@ public class LessonTwo {
         }
     }
 
-    public static void checkRange(int a, int b){
+    public static void checkRange(int a, int b) {
         int c = a + b;
-        if(c>=10 && c<=20){
+        if (c >= 10 && c <= 20) {
             System.out.println("true");
-        }else{
+        } else {
             System.out.println("false");
         }
     }
 
-    public static boolean checkRangeTwo(int a, int b){
+    public static boolean checkRangeTwo(int a, int b) {
         int c = a + b;
-        if(c>=10 && c<=20){
+        if (c >= 10 && c <= 20) {
             return true;
-        }else{
+        } else {
             return false;
         }
     }
 
-    public static void positiveOrNegative(int a){
-        if(a>=0){
+    public static void positiveOrNegative(int a) {
+        if (a >= 0) {
             System.out.println("Число положительное");
-        }else{
+        } else {
             System.out.println("Число отрицательное");
         }
     }
 
-    public static boolean positiveOrNegativeTwo(int a){
-        if(a>=0){
+    public static boolean positiveOrNegativeTwo(int a) {
+        if (a >= 0) {
             return false;
-        }else {
+        } else {
             return true;
+        }
+    }
+
+    public static void printSomeThere(String a, int b) {
+        int counter = b;
+        for(int i = 0; i < counter; i++){
+            System.out.println(a);
         }
     }
 }
