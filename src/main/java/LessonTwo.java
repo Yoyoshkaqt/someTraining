@@ -6,19 +6,31 @@ public class LessonTwo {
         System.out.println(positiveOrNegativeTwo(2));
         printSomeThere("Print",3);
 
-        int nums[] = new int[100];
+        int[] nums = new int[100];
         for (int i = 0; i < 100; i++) {
             nums[i] = i;
             System.out.println("nums[" + i + "] = " + nums[i]);
         }
 
-        int some[] = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
+        int[] some = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
         for (int x : some) {
             if (x < 6) {
                 System.out.println(x * 2);
             }
         }
-    }
+
+        int[] repl = {1,1,0,0,1,0,1,1,0,0};
+        for(int i = 0;i < repl.length;i++){
+            if(repl[i] == 0){
+                repl[i] = 1;
+            } else if(repl[i]==1){
+                repl[i] = 0;
+            }
+            System.out.println(repl[i]);
+            }
+        }
+
+
 
     public static void checkRange(int a, int b) {
         int c = a + b;
