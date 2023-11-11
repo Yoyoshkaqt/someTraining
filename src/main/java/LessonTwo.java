@@ -4,6 +4,12 @@ public class LessonTwo {
         System.out.println(checkRangeTwo(1,2));
         positiveOrNegative(-999999);
         System.out.println(positiveOrNegativeTwo(2));
+
+        int nums[] = new int[100];
+                for(int i = 0;i<100;i++){
+                 nums[i] = i;
+                    System.out.println("nums[" + i + "] = " + nums[i]);
+        }
     }
 
     public static void checkRange(int a, int b){
