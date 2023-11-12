@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class LessonTwo {
     public static void main(String[] args) {
         checkRange(16, 5);
@@ -5,6 +7,7 @@ public class LessonTwo {
         positiveOrNegative(-999999);
         System.out.println(positiveOrNegativeTwo(2));
         printSomeThere("Print",3);
+        System.out.println(Arrays.toString(newArray(25,44)));
 
         int[] nums = new int[100];
         for (int i = 0; i < 100; i++) {
@@ -71,5 +74,14 @@ public class LessonTwo {
         for(int i = 0; i < counter; i++){
             System.out.println(a);
         }
+    }
+
+    public static int[] newArray(int len, int initialValue) {
+        int[]numbers = new int[len];
+        for (int i = 0; i < len; i++) {
+            len = numbers.length;
+            numbers[i] = initialValue;
+        }return numbers;
+
     }
 }
