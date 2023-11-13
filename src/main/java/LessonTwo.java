@@ -8,6 +8,7 @@ public class LessonTwo {
         System.out.println(positiveOrNegativeTwo(2));
         printSomeThere("Print",3);
         System.out.println(Arrays.toString(newArray(25,44)));
+          System.out.println(checkYears(800));
 
         int[] nums = new int[100];
         for (int i = 0; i < 100; i++) {
@@ -31,8 +32,7 @@ public class LessonTwo {
             }
             System.out.println(repl[i]);
             }
-        }
-
+    }
 
 
     public static void checkRange(int a, int b) {
@@ -71,17 +71,29 @@ public class LessonTwo {
 
     public static void printSomeThere(String a, int b) {
         int counter = b;
-        for(int i = 0; i < counter; i++){
+        for (int i = 0; i < counter; i++) {
             System.out.println(a);
         }
     }
 
     public static int[] newArray(int len, int initialValue) {
-        int[]numbers = new int[len];
+        int[] numbers = new int[len];
         for (int i = 0; i < len; i++) {
             len = numbers.length;
             numbers[i] = initialValue;
-        }return numbers;
+        }
+        return numbers;
 
+    }
+
+    public static boolean checkYears(int year) {
+        if(year % 4 !=0 & year % 400 !=0 ){
+            return false;
+        }else if(year % 100 !=0){
+            return true;
+        }else if(year % 400 !=0){
+            return false;
+        }
+        return true;
     }
 }
