@@ -8,7 +8,7 @@ public class LessonTwo {
         System.out.println(positiveOrNegativeTwo(2));
         printSomeThere("Print",3);
         System.out.println(Arrays.toString(newArray(25,44)));
-          System.out.println(checkYears(800));
+        System.out.println(checkYears(1900));
 
         int[] nums = new int[100];
         for (int i = 0; i < 100; i++) {
@@ -87,7 +87,7 @@ public class LessonTwo {
     }
 
     public static boolean checkYears(int year) {
-        if(year % 4 !=0 & year % 400 !=0 ){
+        if(year % 4 !=0){
             return false;
         }else if(year % 100 !=0){
             return true;
