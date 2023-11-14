@@ -32,8 +32,19 @@ public class LessonTwo {
             }
             System.out.println(repl[i]);
             }
-    }
 
+        int[][] nums2 = new int[3][3];
+        for (int i = 0; i < nums2.length; i++) {
+            for (int j = 0; j < nums2[i].length; j++) {
+                if (i == j) {
+                    nums2[i][j] = 1;
+                } else {
+                    nums2[i][j] = 0;
+                }
+                System.out.println(nums2[i][j]);
+            }
+        }
+    }
 
     public static void checkRange(int a, int b) {
         int c = a + b;
@@ -96,4 +107,6 @@ public class LessonTwo {
         }
         return true;
     }
+
+
 }
