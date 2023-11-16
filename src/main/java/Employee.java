@@ -28,8 +28,10 @@ public class Employee {
             employees[3] = new Employee("Xbox", "z", "mymail3@gmail.com", 55445, 552534, 41);
             employees[4] = new Employee("Kekw", "x", "mymail4@gmail.com", 51155, 555334, 40);
 
-            for (Employee employee : employees) {
-                employee.printEmployee();
+            for(int i = 0; i < employees.length; i++){
+                if(employees[i].age >40){
+                    employees[i].printEmployee();
+                }
             }
     }
 }
